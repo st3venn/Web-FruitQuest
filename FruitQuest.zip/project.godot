@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="PROJECTO BUENO"
+run/main_scene="uid://dovi1radnfasl"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://cf5yncnm4ylmj"
+
+[autoload]
+
+GeneralRules="*uid://c3xteribjwc5s"
+Global="*uid://b5eldn8cfi8hh"
+
+[layer_names]
+
+2d_physics/layer_2="enemys"
+2d_physics/layer_3="pinchos"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

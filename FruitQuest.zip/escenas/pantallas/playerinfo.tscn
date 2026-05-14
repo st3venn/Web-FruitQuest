@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://bifhpjfg00vg6"]
+
+[ext_resource type="Script" uid="uid://ber6p3vwdkpei" path="res://escenas/pantallas/playerinfo.gd" id="1_hugun"]
+
+[node name="playerinfo" type="CanvasLayer" unique_id=1886381284]
+process_mode = 3
+script = ExtResource("1_hugun")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1401274641]
+offset_top = -95.0
+offset_right = 1151.0
+offset_bottom = 40.0
+color = Color(1, 1, 0.84705883, 1)
+
+[node name="health_ProgressBar" type="ProgressBar" parent="." unique_id=1019438039]
+offset_left = 57.0
+offset_top = 3.0
+offset_right = 230.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.9490196, 1, 0.38431373, 1)
+step = 1.0
+
+[node name="Label" type="Label" parent="health_ProgressBar" unique_id=931400291]
+layout_mode = 0
+offset_left = -51.0
+offset_top = 2.0
+offset_right = 206.0
+offset_bottom = 25.0
+theme_override_colors/font_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
+text = "Vida: "
+
+[node name="FruitPointLabel" type="Label" parent="." unique_id=24156754]
+offset_left = 776.0
+offset_top = 6.0
+offset_right = 816.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="MenuButton" type="Button" parent="." unique_id=1432598409]
+offset_left = 932.0
+offset_top = 2.0
+offset_right = 1022.0
+offset_bottom = 33.0
+text = "MENU"
+
+[node name="MenuPopUp" type="Node2D" parent="." unique_id=234354776]
+
+[node name="ColorRect" type="ColorRect" parent="MenuPopUp" unique_id=1393070508]
+offset_left = 491.0
+offset_top = 120.0
+offset_right = 629.0
+offset_bottom = 142.0
+
+[node name="Label" type="Label" parent="MenuPopUp" unique_id=802122727]
+offset_left = 495.0
+offset_top = 120.0
+offset_right = 642.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
+text = "JUEGO PAUSADO"
+
+[node name="Reanudar" type="Button" parent="MenuPopUp" unique_id=735189516]
+offset_left = 482.0
+offset_top = 172.0
+offset_right = 647.0
+offset_bottom = 215.0
+text = "Reanudar"
+
+[node name="Reiniciar" type="Button" parent="MenuPopUp" unique_id=1552700299]
+offset_left = 484.0
+offset_top = 384.0
+offset_right = 649.0
+offset_bottom = 427.0
+text = "Reiniciar"
+
+[node name="MusicLabel" type="Label" parent="MenuPopUp" unique_id=100779032]
+offset_left = 535.0
+offset_top = 228.0
+offset_right = 590.0
+offset_bottom = 277.0
+text = "Musica"
+
+[node name="SonidoLabel" type="Label" parent="MenuPopUp" unique_id=489806897]
+offset_left = 537.0
+offset_top = 302.0
+offset_right = 590.0
+offset_bottom = 325.0
+text = "Sonido"
+
+[node name="MusicSlider" type="HSlider" parent="MenuPopUp" unique_id=2141614265]
+offset_left = 494.0
+offset_top = 265.0
+offset_right = 639.0
+offset_bottom = 281.0
+min_value = 50.0
+value = 50.0
+
+[node name="SonidoSlider" type="HSlider" parent="MenuPopUp" unique_id=1952529443]
+offset_left = 493.0
+offset_top = 344.0
+offset_right = 642.0
+offset_bottom = 360.0
+
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="MenuPopUp/Reanudar" to="." method="_on_reanudar_pressed"]
+[connection signal="pressed" from="MenuPopUp/Reiniciar" to="." method="_on_reiniciar_pressed"]
+[connection signal="value_changed" from="MenuPopUp/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="MenuPopUp/SonidoSlider" to="." method="_on_sonido_slider_value_changed"]
