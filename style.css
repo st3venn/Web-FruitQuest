@@ -1,72 +1,39 @@
-/* ===== BASE ===== */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f0f0f;
+    font-family: Arial;
     color: white;
+    background: black;
 }
 
-/* ===== HEADER ===== */
-header {
+/* ===== FONDO PRINCIPAL ===== */
+.hero {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(90deg, #00ff88, #00b3ff);
-    color: black;
+    padding: 80px 20px;
+    background: url("img/fondo.png") center/cover no-repeat;
 }
 
-header h1 {
-    font-size: 50px;
+.hero h1 {
+    font-size: 60px;
     margin: 0;
 }
 
-header p {
+.hero p {
     font-size: 18px;
     margin-top: 10px;
 }
 
-/* ===== PRESENTACIÓN ===== */
-.presentacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
-}
-
-.presentacion img {
-    width: 300px;
-    border-radius: 15px;
-}
-
-/* ===== TEXTO ===== */
-.texto {
-    max-width: 500px;
-}
-
-.texto h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.texto p {
-    margin-bottom: 15px;
-    line-height: 25px;
-}
-
 /* ===== BOTONES ===== */
 .botones {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.botones a {
+.btn {
     text-decoration: none;
     padding: 15px 25px;
     border-radius: 10px;
-    margin-right: 10px;
-    font-weight: bold;
-    transition: 0.3s;
+    margin: 10px;
     display: inline-block;
+    font-weight: bold;
 }
 
 .jugar {
@@ -75,49 +42,47 @@ header p {
 }
 
 .descargar {
-    background: #444;
+    background: #2b6fff;
     color: white;
 }
 
-.botones a:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+/* ===== VENTANAS INFO ===== */
+.info, .proceso {
+    padding: 40px;
 }
 
-/* ===== CARACTERÍSTICAS ===== */
-.caracteristicas {
-    text-align: center;
-    padding: 50px;
+.ventana {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 15px;
 }
 
-.caracteristicas h2 {
-    margin-bottom: 40px;
-    font-size: 40px;
-}
-
-.cards {
+/* ===== GRID ===== */
+.grid {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
+/* ===== CARDS ===== */
 .card {
-    background: #1f1f1f;
-    padding: 30px;
-    width: 250px;
+    background: #1a1a1a;
+    padding: 20px;
+    width: 200px;
     border-radius: 15px;
-    transition: 0.3s;
+    text-align: center;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.card img {
+    width: 80px;
 }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 20px;
-    background: #1f1f1f;
-    margin-top: 40px;
+    background: #111;
 }

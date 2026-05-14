@@ -2,77 +2,127 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FruitQuest</title>
-
+    <title>Fruit Quest</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>FRUITQUEST</h1>
-        <p>Un videojuego hecho con Godot por estudiantes</p>
-    </header>
+<header class="hero">
+    <h1>FRUIT QUEST</h1>
+    <p>Desarrollado por Steven Soriano y Álvaro Fernández</p>
 
-    <section class="presentacion">
-        <img src="img/fondo.png" alt="FruitQuest">
+    <div class="botones">
+        <a href="https://ssoriano.itch.io/fruitquest" target="_blank" class="btn jugar">Jugar</a>
+        <a href="FruitQuest.zip" download class="btn descargar">Descargar</a>
+    </div>
+</header>
 
-        <div class="texto">
-            <h2>Sobre el juego</h2>
+<section class="info">
 
-            <p>
-                FruitQuest es un videojuego de plataformas donde tendrás que recoger frutas,
-                superar niveles y evitar obstáculos.
-            </p>
+    <div class="ventana">
+        <h2>🎮 Cómo se juega</h2>
+        <p>Usa las flechas izquierda y derecha para moverte y saltar obstáculos.</p>
+    </div>
 
-            <p>
-                Este proyecto ha sido creado con Godot como trabajo de desarrollo.
-            </p>
+    <div class="ventana">
+        <h2>🐱 Personaje</h2>
+        <p>Un gato espacial que debe sobrevivir en niveles llenos de peligros.</p>
+        <img src="img/cat.png" alt="Gato espacial">
+    </div>
 
-            <div class="botones">
+    <div class="ventana">
+        <h2>🍓 Objetivo</h2>
+        <p>Recoger todas las frutas y completar los niveles.</p>
+    </div>
 
-                <a href="https://ssoriano.itch.io/fruitquest" target="_blank" class="jugar">
-                    JUGAR ONLINE
-                </a>
+</section>
 
-                <a href="FruitQuest.zip" download class="descargar">
-                    DESCARGAR JUEGO
-                </a>
+<section class="items">
 
-            </div>
-        </div>
-    </section>
+    <h2>🍎 Sistema de puntuación</h2>
 
-    <section class="caracteristicas">
+    <div class="grid">
 
-        <h2>Características</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🍎 Plataformas</h3>
-                <p>Salta y supera obstáculos.</p>
-            </div>
-
-            <div class="card">
-                <h3>🍌 Frutas</h3>
-                <p>Recoge frutas para completar niveles.</p>
-            </div>
-
-            <div class="card">
-                <h3>🎮 Godot</h3>
-                <p>Desarrollado con el motor Godot.</p>
-            </div>
-
+        <div class="card">
+            <img src="img/apple.png">
+            <h3>Manzana</h3>
+            <p>+1 punto</p>
         </div>
 
-    </section>
+        <div class="card">
+            <img src="img/banana.png">
+            <h3>Banana</h3>
+            <p>+2 puntos</p>
+        </div>
 
-    <footer>
-        <p>FruitQuest © 2026</p>
-    </footer>
+        <div class="card">
+            <img src="img/cherry.png">
+            <h3>Cereza</h3>
+            <p>+3 puntos</p>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
+
+</section>
+
+<section class="enemigos">
+
+    <h2>⚠️ Obstáculos</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="img/spikeball.png">
+            <h3>Spike Ball</h3>
+            <p>-10 vida</p>
+        </div>
+
+        <div class="card">
+            <img src="img/saw.png">
+            <h3>Sierra</h3>
+            <p>-10 vida</p>
+        </div>
+
+        <div class="card">
+            <img src="img/spikes.png">
+            <h3>Pinchos</h3>
+            <p>Muerte instantánea</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="proceso">
+
+    <h2>📚 Nuestro proceso</h2>
+
+    <div class="ventana">
+        <p>
+            Desde el primer momento empezamos investigando cómo funcionan los motores de videojuegos,
+            viendo tutoriales y analizando juegos similares para entender su estructura.
+        </p>
+
+        <p>
+            Después hicimos bocetos en papel y digital para diseñar los niveles, el personaje y la jugabilidad.
+        </p>
+
+        <p>
+            A lo largo del desarrollo fuimos probando, corrigiendo errores y mejorando el movimiento,
+            los enemigos y la experiencia del jugador.
+        </p>
+
+        <p>
+            Finalmente optimizamos el juego, añadimos niveles, sistema de puntuación y pulimos el diseño visual.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Fruit Quest © 2026</p>
+</footer>
 
 </body>
 </html>
